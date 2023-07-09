@@ -1,0 +1,5 @@
+container fluid significa que ocupa todo 
+navbar-brand es donde va el logo
+
+utilities son las clases abreviadas 
+breakpoints 
