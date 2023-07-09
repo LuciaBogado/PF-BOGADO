@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
 *{
     font-family: 'Quicksand', sans-serif;
-    padding: 0;
-    margin: 0;
+    /*padding: 0;
+    margin:0; */
 
 }
 html{
@@ -161,19 +161,18 @@ footer{
 /* TIENDA*/
 /* HEADER*/
 .contenedor2{
-  position:relative;
-  width: 100%;
+    position:relative ;
+  
 }
 .text-img{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: none;
-    color: white;
-    padding: 10px;
-    font-size: 4rem;
-  }
+    text-align: center;
+    color: azure;
+    font-size: 40px ;
+}
 .filters{
     padding: 20px 20px 30px 30px;
 }
