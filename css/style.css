@@ -56,7 +56,7 @@ main{
     color: rgb(27, 117, 60);
     font-weight: 500;
     font-size: 2rem;
-    }
+}
 .productos-destacados {
     display: flex;
     flex-direction: row;
@@ -94,7 +94,7 @@ h1,h2,h3{
 form label{
     font-weight: 400;
     color: rgb(51, 161, 116);
-    font-size: 2rem;
+    font-size: 1.2rem;
     display: block;
 }
 p{
@@ -160,19 +160,6 @@ footer{
 }
 /* TIENDA*/
 /* HEADER*/
-.contenedor2{
-    position:relative ;
-  
-}
-.text-img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: azure;
-    font-size: 40px ;
-}
 .filters{
     padding: 20px 20px 30px 30px;
 }
@@ -258,12 +245,11 @@ footer{
        display: flex;
        flex-direction: row;
        align-items: center;
-       justify-content: space-between;
-       padding: 123px;
+       justify-content:space-evenly;
     }
 
     .tienda .prod1 p{
-        width: 60%;
+        width: 50%;
         margin-left: 50px;
     }
     .prod1 img{
@@ -286,7 +272,7 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        padding: 0 50px;
+        padding: 50px;
     }
 
     .tienda .prod3{
@@ -312,3 +298,48 @@ footer{
     .tienda section{
         border-radius: 10px;
     }
+/*tienda grids*/
+@media (width < 768px){
+    /* tienda */
+    .tienda{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "actions" 
+        "filters"
+        "prod1"
+        "prod2"
+        "prod3"
+        "prod4";
+    }
+        .tienda .actions{
+            justify-content: flex-start;
+        }
+        .tienda .actions input{
+            width:260px;
+        }
+        .tienda .filters span,
+        .tienda .filters label,
+        .tienda .filters input[type="checkbox"],
+        .tienda .filters ul{
+            display: flex;
+        } 
+        .tienda .filters select{
+            width: 100%;
+            background-color: rgb(243, 245, 245);
+            padding: 6px;
+            border-radius: 3px;
+            margin-top: 20px;
+        }
+        .tienda .prod1,
+        .tienda .prod2{
+            flex-direction: column;
+            padding: 10px;
+        }
+        .tienda .prod1 p{
+            width: auto;
+            margin-left: 0;
+            text-align: center;
+
+        }
+}

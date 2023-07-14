@@ -1,0 +1,26 @@
+.productos-destacados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    margin: auto;
+}
+.cuadro-productos {
+    display:flex ;
+    flex-direction: column;
+    border: 1.5px solid #b8b8b8;
+    border-radius: 5px;
+    padding: 10px ;
+    width: 300px; 
+    p{
+        text-align: center;
+        margin-top: 10px;
+        width: 100%
+
+    }
+    img {
+        width: 100%;
+    }
+}

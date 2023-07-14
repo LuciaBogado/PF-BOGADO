@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
+.botonera {
+  background-color: rgb(221, 221, 221);
+}
+.botonera img {
+  width: 100px;
+}
+.botonera ul {
+  list-style: none;
+  display: flex;
+}
+.botonera ul li {
+  margin: 10px;
+}
+.botonera ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 2em;
+  color: rgb(51, 161, 116);
+}
+.botonera ul li a:hover {
+  color: black;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../img/Fondo\ terralux.jpg);
+  background-repeat: auto;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  color: rgb(51, 161, 116);
+  font-size: 2em;
+}
+
+form label {
+  font-weight: 400;
+  color: rgb(51, 161, 116);
+  font-size: 1.2em;
+  display: block;
+}
+
+p {
+  color: gray;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+header img {
+  width: 100%;
+}
+
+/* selector de clases */
+.tx-center {
+  text-align: center;
+}
+
+.box-top {
+  width: 100%;
+  background-color: rgb(51, 161, 116);
+  color: black;
+  font-size: 2em;
+  position: sticky;
+}
+
+.bg-gris {
+  background-color: rgb(230, 232, 232);
+  border: #7c7c7c;
+  border-radius: 10px;
+}
+
+.contenedor1 {
+  border: solid rgba(128, 128, 128, 0) 1px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.contenedor {
+  border: solid rgb(187, 180, 180) 1px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+}
+
+footer {
+  background-color: none;
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer svg {
+  width: 40px;
+  height: 40px;
+  fill: rgb(51, 161, 116);
+  margin-right: 10px;
+}
+footer ul {
+  list-style: circle;
+}
+footer ul li a {
+  color: rgb(51, 161, 116);
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.productos-destacados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  margin: auto;
+}
+
+.cuadro-productos {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #b8b8b8;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+}
+.cuadro-productos p {
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+.cuadro-productos img {
+  width: 100%;
+}
+
+.filters {
+  padding: 20px 20px 30px 30px;
+}
+.filters a {
+  color: rgb(134, 130, 132);
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+}
+.filters a:hover {
+  color: rgb(17, 236, 163);
+}
+.filters span {
+  display: block;
+  color: rgb(0, 0, 0);
+  margin: 10px 0;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+}
+.filters select {
+  color: rgb(10, 133, 75);
+  border: none;
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.filters li {
+  padding-left: 10px;
+  list-style: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.actions button {
+  margin-left: 10px;
+  background-color: rgba(17, 131, 93, 0.623);
+  color: white;
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+}
+
+.actions input {
+  padding: 6px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(221, 221, 221);
+}
+
+/*# sourceMappingURL=main.css.map */

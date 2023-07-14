@@ -1,0 +1,80 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url(../img/Fondo\ terralux.jpg);
+    background-repeat:auto;
+    background-attachment:fixed;
+    background-size: cover;
+}
+h1,h2,h3{
+    font-weight: $textBold;
+    color: $mainColor;
+    font-size: $textLg;
+}
+form label{
+    font-weight: $textRegular;
+    color: $mainColor;
+    font-size: $textMd;
+    display: block;
+}
+p{
+    color: $secondaryColor;
+    font-weight: $textRegular;
+    font-size: $textMd;
+}
+header img{
+    width: 100%;
+}
+/* selector de clases */
+.tx-center{
+    text-align:center;
+}
+.box-top{
+    width: 100%;
+    background-color: $mainColor;
+    color: $keyColor;
+    font-size: $textLg;
+    position: sticky;
+}
+.bg-gris {
+    background-color: rgb(230, 232, 232);
+    border: #7c7c7c ;
+    border-radius: 10px;
+}
+.contenedor1{
+    border: solid rgba(128, 128, 128, 0) 1px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+}
+.contenedor{
+    border: solid rgb(187, 180, 180) 1px;
+    border-radius: 5px;
+    margin: 10px ;
+    padding: 20px;
+}
+footer{
+    background-color: none;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    svg{
+        width: 40px;
+        height: 40px;
+        fill: $mainColor;
+        margin-right: 10px;
+    }
+    ul{
+        list-style: circle;
+        li a{
+        color: $mainColor;
+        font-size: $textMd;
+        text-decoration: none;
+        }
+    }
+}
+.w100{
+    width: 100%;
+}
