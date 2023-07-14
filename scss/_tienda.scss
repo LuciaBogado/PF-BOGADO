@@ -33,21 +33,18 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-.actions button{
+    button{
     margin-left: 10px;
     background-color: rgba(17, 131, 93, 0.623);
     color: white;
     padding: 6px;
     border: none;
     border-radius: 3px;
-}
-
-.actions input{
+    }
+    input{
     padding: 6px;
     border-radius: 3px;
     border: none;
     background-color: rgb(221, 221, 221);
-    
+    }
 }

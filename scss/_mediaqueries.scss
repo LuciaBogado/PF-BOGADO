@@ -1,0 +1,124 @@
+.tienda{
+    display: grid;
+    grid-template-columns: 20% repeat(2,1fr);
+    grid-template-rows: 20px repeat(3, 300px);
+    gap: 20px;
+    grid-template-areas: 
+    "actions actions actions" 
+    "filters prod1 prod1" 
+    "filters prod2 prod3"
+    "filters prod2 prod4"
+    ;
+}
+    .tienda .actions{
+        padding: 25px 10px;
+        grid-area: actions;
+    }
+
+    .tienda .filters{
+       grid-area: filters;
+    }
+
+    .tienda .prod1{
+       grid-area: prod1;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content:space-evenly;
+    }
+
+    .tienda .prod1 p{
+        width: 50%;
+        margin-left: 50px;
+    }
+    .prod1 img{
+        height: 250px;
+    }
+    .prod2 img{
+        height: 250px;
+    }
+    .prod3 img{
+        height: 250px;
+    }
+    .prod4 img{
+        height: 250px;
+    }
+
+    .tienda .prod2{
+
+        grid-area: prod2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+    }
+
+    .tienda .prod3{
+        grid-area: prod3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tienda .prod4{
+        grid-area: prod4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tienda .prod5{
+        grid-area: prod5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tienda section{
+        border-radius: 10px;
+    }
+/*tienda grids*/
+@media (width < 768px){
+    /* tienda */
+    .tienda{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "actions" 
+        "filters"
+        "prod1"
+        "prod2"
+        "prod3"
+        "prod4";
+    }
+        .tienda .actions{
+            justify-content: flex-start;
+        }
+        .tienda .actions input{
+            width:260px;
+        }
+        .tienda .filters span,
+        .tienda .filters label,
+        .tienda .filters input[type="checkbox"],
+        .tienda .filters ul{
+            display: flex;
+        } 
+        .tienda .filters select{
+            width: 100%;
+            background-color: rgb(243, 245, 245);
+            padding: 6px;
+            border-radius: 3px;
+            margin-top: 20px;
+        }
+        .tienda .prod1,
+        .tienda .prod2{
+            flex-direction: column;
+            padding: 10px;
+        }
+        .tienda .prod1 p{
+            width: auto;
+            margin-left: 0;
+            text-align: center;
+
+        }
+}
