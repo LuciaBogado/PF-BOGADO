@@ -1,0 +1,15 @@
+.imgcontenedor{
+    border: 1.5px solid #b8b8b8;
+    border-radius: 5px;
+    box-shadow: 3px 6px 30px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 3px 6px 30px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 3px 6px 30px 0px rgba(0,0,0,0.52);
+    img{
+        width: auto
+    }
+}
+.gal1{
+    @extend .imgcontenedor ;
+    background-color: aquamarine;
+    
+}
