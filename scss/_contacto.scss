@@ -1,0 +1,13 @@
+form label{
+    font-weight: $textRegular;
+    color: $mainColor;
+    font-size: $textMd;
+    display: flex;
+}
+
+.display-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap
+}

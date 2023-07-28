@@ -39,13 +39,6 @@ h1, h2, h3 {
   font-size: 2em;
 }
 
-form label {
-  font-weight: 400;
-  color: rgb(51, 161, 116);
-  font-size: 1.5em;
-  display: block;
-}
-
 p {
   color: gray;
   font-weight: 400;
@@ -77,7 +70,11 @@ header img {
 }
 
 .contenedor1 {
-  border: solid rgba(128, 128, 128, 0) 1px;
+  border: solid rgb(187, 180, 180) 1px;
+  box-shadow: 26px 28px 17px -20px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 26px 28px 17px -20px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 26px 28px 17px -20px rgba(0, 0, 0, 0.39);
+  background-color: rgba(241, 241, 241, 0.7);
   border-radius: 5px;
   margin: 10px;
   padding: 20px;
@@ -102,6 +99,7 @@ footer svg {
   height: 40px;
   fill: rgb(51, 161, 116);
   margin-right: 10px;
+  text-decoration: none;
 }
 footer ul {
   list-style: circle;
@@ -114,6 +112,14 @@ footer ul li a {
 
 .w100 {
   width: 100%;
+}
+
+.w80 {
+  width: 80%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .BtnAnimado:hover {
@@ -143,6 +149,7 @@ footer ul li a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: rgb(231, 231, 231);
 }
 .productos-destacados figure img {
   display: flex;
@@ -235,7 +242,7 @@ footer ul li a {
   display: grid;
   grid-template-columns: 20% repeat(2, 1fr);
   grid-template-rows: 20px repeat(3, 300px);
-  gap: 20px;
+  gap: 15px;
   grid-template-areas: "actions actions actions" "filters prod1 prod1" "filters prod2 prod3" "filters prod2 prod4";
 }
 
@@ -368,6 +375,8 @@ footer ul li a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    height: auto;
+    padding: 15px;
   }
   .descrip1 p {
     padding: 10px;
@@ -404,20 +413,113 @@ footer ul li a {
   width: 100%;
   border-radius: 5px;
 }
-
-.imgcontenedor, .gal1 {
-  border: 1.5px solid #b8b8b8;
-  border-radius: 5px;
-  box-shadow: 3px 6px 30px 0px rgba(0, 0, 0, 0.52);
-  -webkit-box-shadow: 3px 6px 30px 0px rgba(0, 0, 0, 0.52);
-  -moz-box-shadow: 3px 6px 30px 0px rgba(0, 0, 0, 0.52);
-}
-.imgcontenedor img, .gal1 img {
+.descrip1 video {
   width: auto;
+  border-radius: 5px;
+  height: 500px;
+}
+
+.imgcontenedor {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(3, 300px);
+  gap: 15px;
+  margin: 0% 10%;
+  grid-template-areas: "img1 img2 img3" "img4 img5 img5" "img6 img6 img7";
 }
 
 .gal1 {
-  background-color: aquamarine;
+  background-color: rgb(214, 230, 224);
+  border-radius: 5px;
+  grid-area: img1;
+}
+.gal1 img {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gal2 {
+  background-color: rgb(143, 175, 166);
+  border-radius: 5px;
+  grid-area: img2;
+}
+.gal2 img {
+  width: 300px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.gal3 {
+  background-color: rgb(56, 151, 120);
+  border-radius: 5px;
+  grid-area: img3;
+}
+.gal3 img {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gal4 {
+  background-color: rgb(176, 245, 222);
+  border-radius: 5px;
+  grid-area: img4;
+}
+.gal4 img {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gal5 {
+  background-color: rgb(146, 202, 183);
+  border-radius: 5px;
+  grid-area: img5;
+}
+.gal5 img {
+  width: auto;
+  height: 300px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.gal6 {
+  background-color: rgb(186, 209, 201);
+  border-radius: 5px;
+  grid-area: img6;
+}
+.gal6 img {
+  width: auto;
+  height: 300px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.gal7 {
+  background-color: rgb(153, 192, 179);
+  border-radius: 5px;
+  grid-area: img7;
+}
+.gal7 img {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form label {
+  font-weight: 400;
+  color: rgb(51, 161, 116);
+  font-size: 1.5em;
+  display: flex;
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=main.css.map */

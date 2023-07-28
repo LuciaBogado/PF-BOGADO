@@ -12,12 +12,7 @@ h1,h2,h3{
     color: $mainColor;
     font-size: $textLg;
 }
-form label{
-    font-weight: $textRegular;
-    color: $mainColor;
-    font-size: $textMd;
-    display: block;
-}
+
 p{
     color: $secondaryColor;
     font-weight: $textRegular;
@@ -44,7 +39,11 @@ header img{
     border-radius: 10px;
 }
 .contenedor1{
-    border: solid rgba(128, 128, 128, 0) 1px;
+    border: solid rgb(187, 180, 180) 1px;
+    box-shadow: 26px 28px 17px -20px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 26px 28px 17px -20px rgba(0,0,0,0.39);
+    -moz-box-shadow: 26px 28px 17px -20px rgba(0,0,0,0.39);
+    background-color: rgba(241, 241, 241, 0.7);
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
@@ -66,6 +65,7 @@ footer{
         height: 40px;
         fill: $mainColor;
         margin-right: 10px;
+        text-decoration: none;
     }
     ul{
         list-style: circle;
@@ -78,4 +78,10 @@ footer{
 }
 .w100{
     width: 100%;
+}
+.w80{
+    width: 80%;
+}
+a{
+    text-decoration: none;
 }
