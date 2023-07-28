@@ -4,7 +4,16 @@
     transition: all 1s;
 
 }
-
+/*banner*/
+@keyframes moveText {
+    from {
+      transform: translateX(0); /* Comienza en la posición inicial (sin desplazamiento) */
+    }
+    to {
+      transform: translateX(100%); /* Se desplaza hacia el lado derecho */
+    }
+    
+  }
 
 
 
